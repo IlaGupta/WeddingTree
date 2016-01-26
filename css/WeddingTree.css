@@ -1,0 +1,788 @@
+
+
+/***********
+general
+*************/
+
+html{
+  background-color:#f8f8ff; 
+}
+
+body {
+	
+	margin:auto;
+	font-family: 'Open Sans' , sans-serif;
+
+  
+
+}
+
+
+
+
+
+
+
+/***********
+header
+*************/
+header{
+  position: relative;
+  background: white;
+  z-index: 3; 
+
+}
+
+.logo-scenic {
+	
+	position: relative;
+	
+    height: 600px;
+    background: url('../img/Scenic1.jpg') no-repeat;
+    background-size: auto 600px;  
+    background-position: top center;
+    background-attachment: fixed; 
+    overflow: hidden; 
+  
+    
+    
+}
+
+.logo-bride {
+   height:700px;
+   width:400px;
+   background: url('../img/Couple.png') no-repeat;
+   background-position: left;     
+   position:absolute;
+   top:20%;
+   margin: 0;
+   padding: 0;
+   left:60%;
+  
+
+ 
+}
+
+.logo-text{
+ height:60px;
+ width: 100%;
+ margin-bottom: 0;
+ padding-bottom: 0;
+ background: url('../img/Logo.png') no-repeat;
+ background-position: center;
+ /*background-color: pink;*/
+ background-size: contain;
+ position:absolute;
+ top:20%;
+ 
+}
+
+
+
+/***********
+wrapper
+*************/
+
+.main{
+  max-width: 640px;
+  margin: 0 auto;
+
+
+}
+
+/*wrapper coding for  revealing footer*/
+.wrapper {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 300px;
+  background: white;  
+  overflow: hidden;
+  background-color: #f8f8ff;
+
+}
+
+
+
+
+
+
+
+
+
+/***********
+section
+*************/
+section h1{
+color:#000;
+font-weight: 700;
+font-size: 2rem;
+
+}
+
+
+.content article {
+	text-align: center;
+	margin: 0 auto;
+	padding: 50px 0;
+  font-family: 'Kaushan Script', cursive;
+
+	
+}
+
+.content article h3 {
+  font-weight: normal;
+  color: #6495ed;
+  letter-spacing: 1.2px;
+}
+
+.content article h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  color: #4682b4;
+}
+
+/***********
+ portfolio Grid
+*************/
+
+.portfolio{
+  margin: 0 auto;
+  height:1050px;
+
+
+}
+
+.portfolio img{
+  max-width: 100%;
+  width:48%;
+  height:250px;
+  float:left;
+  margin:1% 1%;
+  padding: 0;
+}
+
+.portfolio  img {
+  position:relative;
+  display: block;
+
+}
+
+.portfolio img {
+  opacity: 0;
+  transform: translateX(20px);  
+  transition: all 0.6s ease-in-out;
+  
+}
+
+.portfolio img.is-showing {
+  opacity: 1;
+  transform:translateX(0);
+}
+
+/*to zoom in image when hover over*/
+
+figure{
+  cursor:pointer;
+}
+
+.portfolio img {
+  transform : scale(1);
+  transform: translateX(20px);
+  transition: all 0.9s ease-in-out;
+}
+
+.portfolio figure:hover img{
+  transform: scale(1.1);
+}
+
+
+
+/***********
+div- blog posts
+*************/
+.blog-posts div {
+  margin-left:5px;
+  }
+
+.blog-posts {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height:263px;
+
+}
+
+.blog-posts h4,h5{
+  font-family: 'Inconsolata', cursive;
+  font-size: 1rem;
+}
+
+
+.post{
+ border:1px solid #e1e1e1;
+ text-align: center;
+ padding: 20px 20px 0;
+ background-color: white;
+ }
+
+.post h4, h5 {
+  margin:10px 10px;
+}
+
+.post a.button {
+  margin:15px 0;
+  padding:0 10px;
+}
+
+.post-1{
+  z-index: -1;
+  transform: translate(100px, 20px);
+}
+
+.post-2 {
+  z-index: 289;
+}
+
+.post-3{
+  z-index: -1;
+  transform: translate(-100px, 20px);
+}
+
+
+/***********
+footer
+*************/
+
+.footer p{
+  margin:15px 0;
+}
+
+footer {
+  background:#333;
+  color:white;
+  padding:10px 0 0;
+  width:100%;
+  bottom: 0;
+  position:fixed;
+  z-index: 0;
+
+}
+
+.footer{
+  width:640px;
+  margin: 0 auto;
+}
+ 
+.footer a{
+  text-decoration: none;
+  color:#0FA0CE;
+}
+
+
+
+
+
+/***********
+div
+*************/
+.bottom{
+	height:2000px;
+ background-color: green;
+ opacity:.6;
+}
+
+
+/***********
+Pre-Wedding Portraits
+*************/
+
+.header {
+  
+  width:100%;
+  height:100px;
+  background: #add8e6;
+  margin: 0;
+  border-bottom: 5px solid #87cefa;
+}
+
+.header h2{
+  color:#fff;
+  float: left;
+  width:509px;
+  height:52px;
+  padding: 30px 1rem 1rem 15px;
+  text-align: left;
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-family: 'Indie Flower', cursive;
+}
+
+nav ul{
+  width:400px;
+ padding:40px 10px 1rem 1rem;
+ margin:0;
+ text-align: center;
+ float: right;
+
+}
+
+nav ul li {
+  font-size: 1.8rem;
+  display: inline;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 15px 10px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color:#fff;
+}
+
+nav a:hover, nav a.selected {
+  color: #4682b4;
+} 
+
+
+/***********
+Wrapper album
+*************/
+
+
+.pictures{
+  width:500px;
+    margin: 0 auto;       
+}
+
+.pictures {
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding11.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures2 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures3 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures4 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures5 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures6 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding7.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures7 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding8.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures8{
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding9.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.pictures9 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Pre-Wedding Portrait/pre-wedding10.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+
+.color_transition {
+  background-color: rgba(0,0,0,0.4);
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ border-radius: 50%;
+ position:absolute;
+  
+}
+
+
+/***************
+Functions & Events page-break-inside:
+*****************/
+
+
+.events1{
+  width:500px;
+    margin: 0 auto;       
+}
+
+.events1 {
+  height : 500px;
+  background-image: url("../img/Functions/function9.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events2 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events3 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events4 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events5 {
+  width:500px;
+  margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events6 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events7 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events8{
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function7.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.events9 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Functions/function8.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+
+.color_transition {
+ background-color: rgba(0,0,0,0.4);
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ border-radius: 50%;
+ position:absolute;
+  
+}
+
+
+
+/***************
+Wedding Signature Page
+*****************/
+
+
+.sign1{
+  width:500px;
+    margin: 0 auto;       
+}
+
+.sign1 {
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/Wedding1.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign2 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign3 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign4 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign5 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign6 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign7 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding12.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
+.sign8 {
+  width:500px;
+    margin: 0 auto;   
+  height : 500px;
+  background-image: url("../img/Wedding Signature Book/wedding9.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  position:relative;
+
+}
+
